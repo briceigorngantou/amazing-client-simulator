@@ -6,11 +6,11 @@ import joblib
 from datetime import datetime
 
 # Charger modèles
-with open("./../../Courses ECOLE-IT/Niveau 5/TP 5IA/PFE_IA/scaler.pkl", "rb") as f:
+with open("scaler.pkl", "rb") as f:
     scaler = joblib.load(f)
-with open("./../../Courses ECOLE-IT/Niveau 5/TP 5IA/PFE_IA/pca.pkl", "rb") as f:
+with open("pca.pkl", "rb") as f:
     pca = joblib.load(f)
-with open("./../../Courses ECOLE-IT/Niveau 5/TP 5IA/PFE_IA/kmeans_model.pkl", "rb") as f:
+with open("kmeans_model.pkl", "rb") as f:
     kmeans_final = joblib.load(f)
 
 app = FastAPI()

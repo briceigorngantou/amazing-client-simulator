@@ -46,6 +46,7 @@ streamlit run client_segment_app.py
 
 Cela ouvrira une interface web dans le navigateur où vous pourrez remplir un formulaire simulant un nouveau client.
 
+### 5. Dans un autre terminal 
 Installez FastAPI et Uvicorn :
 
 ```bash
