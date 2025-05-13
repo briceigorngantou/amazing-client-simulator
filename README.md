@@ -21,7 +21,7 @@ git clone https://github.com/Yassine-Mahfoudh/amazing-client-simulator.git
 ### 2. Créer un environnement virtuel (recommandé)
 
 ```bash
-python -m venv venv
+python -m venv .venv
 ```
 
 ### 3. Activer l'environnement virtuel
@@ -49,7 +49,7 @@ Cela ouvrira une interface web dans le navigateur où vous pourrez remplir un fo
 Installez FastAPI et Uvicorn :
 
 ```bash
-pip install fastapi uvicorn
+pip install fastapi uvicorn scikit-learn==1.2.2
 ```
 
 Lancer le serveur :
@@ -57,5 +57,3 @@ Lancer le serveur :
 ```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
-
-pip install scikit-learn==1.2.2
