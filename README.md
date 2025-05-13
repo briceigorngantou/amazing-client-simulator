@@ -45,3 +45,17 @@ streamlit run client_segment_app.py
 ```
 
 Cela ouvrira une interface web dans le navigateur où vous pourrez remplir un formulaire simulant un nouveau client.
+
+Installez FastAPI et Uvicorn :
+
+```bash
+pip install fastapi uvicorn
+```
+
+Lancer le serveur :
+
+```bash
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+pip install scikit-learn==1.2.2

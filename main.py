@@ -2,16 +2,16 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pandas as pd
 import numpy as np
-import pickle
+import joblib
 from datetime import datetime
 
 # Charger modèles
 with open("./../../Courses ECOLE-IT/Niveau 5/TP 5IA/PFE_IA/scaler.pkl", "rb") as f:
-    scaler = pickle.load(f)
+    scaler = joblib.load(f)
 with open("./../../Courses ECOLE-IT/Niveau 5/TP 5IA/PFE_IA/pca.pkl", "rb") as f:
-    pca = pickle.load(f)
-with open("./../../Courses ECOLE-IT/Niveau 5/TP 5IA/PFE_IA/kmeans_final.pkl", "rb") as f:
-    kmeans_final = pickle.load(f)
+    pca = joblib.load(f)
+with open("./../../Courses ECOLE-IT/Niveau 5/TP 5IA/PFE_IA/kmeans_model.pkl", "rb") as f:
+    kmeans_final = joblib.load(f)
 
 app = FastAPI()
 
